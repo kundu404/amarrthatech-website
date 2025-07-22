@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amarrthatech Pvt. Ltd. | Database Managed Services & Consulting</title>
+  <meta name="description" content="Amarrthatech Pvt. Ltd. provides enterprise-grade database managed services, performance consulting, cloud migration, and security solutions in Pune, India.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Amarrthatech Pvt. Ltd. | Database Managed Services & Consulting">
+  <meta property="og:description" content="Enterprise database managed services, performance tuning, cloud migration, and security solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amarrthatech.com/">
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    /* Make service cards more spacious and visually separated */
+    .service-card {
+      min-height: 340px;
+      margin-bottom: 2.5rem;
+      padding: 2.2rem 1.2rem 1.2rem 1.2rem;
+      border-radius: 1.5em;
+      box-shadow: 0 4px 32px rgba(0,40,85,0.13);
+      background: rgba(255,255,255,0.13);
+      backdrop-filter: blur(6px);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-card:hover {
+      box-shadow: 0 8px 48px rgba(0,40,85,0.22);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .service-card .card-body {
+      padding: 1.2rem 0.5rem;
+    }
+    .row.g-4 > [class^='col-'] {
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 991px) {
+      .service-card { min-height: 280px; padding: 1.5rem 0.7rem; }
+    }
+  </style>
+</head>
+<body style="background: linear-gradient(120deg, #bcbec4 60%, #a7aab3 100%);">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm animate__animated animate__fadeInDown" style="z-index: 1000;">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">
+        <img src="logo.png" alt="Amarrthatech Logo" style="max-height:90px; width:auto; vertical-align:middle; box-shadow:0 4px 16px rgba(0,0,0,0.18);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html#managed">Database Managed Services</a></li>
+              <li><a class="dropdown-item" href="services.html#performance">Performance Tuning</a></li>
+              <li><a class="dropdown-item" href="services.html#migration">Cloud & Migration</a></li>
+              <li><a class="dropdown-item" href="services.html#security">Security & Auditing</a></li>
+              <li><a class="dropdown-item" href="services.html#analytics">Dashboards & Analytics</a></li>
+              <li><a class="dropdown-item" href="services.html#middleware">App & Middleware</a></li>
+              <li><a class="dropdown-item" href="services.html#architecture">Enterprise Architecture</a></li>
+              <li><a class="dropdown-item" href="services.html#qa">Quality Analysis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-warning fw-semibold px-4 shadow-sm" href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section with SVG and Animations -->
+  <section class="hero-section text-white d-flex align-items-center position-relative overflow-hidden" style="background: linear-gradient(120deg, #002855 60%, #005fa3 100%); min-height: 80vh;">
+    <div class="container text-center py-5 position-relative" style="z-index:2;">
+      <h1 class="display-3 fw-bold mb-3 animate__animated animate__fadeInDown" id="typed-title">Database Managed Services & Performance Consulting</h1>
+      <p class="lead mb-4 animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="200">Empowering Enterprises with Reliable, Secure, and Optimized Database Solutions</p>
+      <a href="services.html" class="btn btn-lg btn-warning shadow animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="400">Our Services</a>
+      <a href="about.html" class="btn btn-lg btn-outline-light ms-3 animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="600">Why Amarrthatech?</a>
+    </div>
+    <!-- SVG Wave Background -->
+    <svg viewBox="0 0 1440 320" style="position:absolute;bottom:0;left:0;width:100%;z-index:1;opacity:0.7;">
+      <path fill="#fff" fill-opacity="0.1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,122.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <!-- Database illustration image removed as requested -->
+  </section>
+
+  <!-- Quick Contact Bar with Animation -->
+  <div class="bg-primary text-white py-2 animate__animated animate__fadeIn" data-aos="fade-down" data-aos-delay="200">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center gap-4 small">
+      <span><i class="bi bi-telephone-fill me-1"></i> +91 7718835372</span>
+      <span><i class="bi bi-envelope-fill me-1"></i> enquiry@amarrthatech.com</span>
+      <span><i class="bi bi-envelope-fill me-1"></i> careers@amarrthatech.com</span>
+      <span><i class="bi bi-geo-alt-fill me-1"></i> 502, 5th Floor, Sai Krupa CHS Ltd, Building No. 58, Kurla, Mumbai – 400024, Maharashtra, India</span>
+      <span><i class="bi bi-clock-fill me-1"></i> Mon - Fri 9:30am - 6:30pm</span>
+    </div>
+  </div>
+
+  <!-- Services Section with Animations -->
+  <section class="container py-5" id="services">
+    <h2 class="text-center mb-4 animate__animated animate__fadeInUp" data-aos="fade-up">Our Core Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0 text-center service-card bg-white bg-opacity-75 position-relative" style="min-height:280px;">
+          <div class="card-body position-relative" style="padding-top:1.2em; padding-bottom:1em;">
+            <span class="badge rounded-pill bg-primary text-white position-absolute" style="top:-12px;left:0.1em;font-size:0.75rem;padding:0.22em 0.6em;min-width:80px;z-index:2;">24/7 Monitoring</span>
+            <span class="badge rounded-pill bg-success text-white position-absolute" style="top:-12px;right:0.1em;font-size:0.75rem;padding:0.22em 0.6em;min-width:80px;z-index:2;">Proactive Support</span>
+            <span class="display-5 text-primary mb-3 d-block"><i class="bi bi-database-fill-gear"></i></span>
+            <h5 class="card-title fw-bold mb-2">Database Managed Services</h5>
+            <div class="mb-2">
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2" style="max-width:180px;margin:0 auto;">
+                <span class="badge rounded-pill bg-warning text-dark flex-fill text-center" style="font-size:0.75rem;padding:0.22em 0.6em;min-width:80px;">Automated Backups</span>
+                <span class="badge rounded-pill bg-info text-dark flex-fill text-center" style="font-size:0.75rem;padding:0.22em 0.6em;min-width:80px;">Multi-DB Expertise</span>
+              </div>
+            </div>
+            <p class="card-text mb-3 text-dark">Expert management for Oracle, MySQL, PostgreSQL, and MongoDB. We keep your databases secure, optimized, and always available.</p>
+            <a href="services.html#managed" class="stretched-link text-decoration-none fw-semibold" style="color:#005fa3;">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-success mb-3 d-block"><i class="bi bi-bar-chart-line"></i></span>
+            <h5 class="card-title">Performance Tuning & AWR Analysis</h5>
+            <p class="card-text">Expert tuning, AWR report analysis, and query optimization for maximum database efficiency.</p>
+            <a href="services.html#performance" class="stretched-link text-decoration-none text-success fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-warning mb-3 d-block"><i class="bi bi-cloud-arrow-up"></i></span>
+            <h5 class="card-title">Cloud & On-Premise Migration</h5>
+            <p class="card-text">Seamless migration of databases to cloud or on-premise, with zero data loss and minimal downtime.</p>
+            <a href="services.html#migration" class="stretched-link text-decoration-none text-warning fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-info mb-3 d-block"><i class="bi bi-shield-lock"></i></span>
+            <h5 class="card-title">Database Security & Auditing</h5>
+            <p class="card-text">Comprehensive security audits, compliance checks, and proactive threat monitoring.</p>
+            <a href="services.html#security" class="stretched-link text-decoration-none text-info fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-secondary mb-3 d-block"><i class="bi bi-graph-up-arrow"></i></span>
+            <h5 class="card-title">Custom Dashboards & Analytics</h5>
+            <p class="card-text">Real-time dashboards and analytics for database health, KPIs, and business insights.</p>
+            <a href="services.html#analytics" class="stretched-link text-decoration-none text-secondary fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-danger mb-3 d-block"><i class="bi bi-people"></i></span>
+            <h5 class="card-title">Application & Middleware Support</h5>
+            <p class="card-text">Support for enterprise applications, middleware, and structured network services.</p>
+            <a href="services.html#middleware" class="stretched-link text-decoration-none text-danger fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="700">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-success mb-3 d-block"><i class="bi bi-diagram-3"></i></span>
+            <h5 class="card-title">Enterprise Architecture</h5>
+            <p class="card-text">Design and implement scalable, secure, and robust enterprise database architectures.</p>
+            <a href="services.html#architecture" class="stretched-link text-decoration-none text-success fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="800">
+        <div class="card h-100 shadow-sm border-0 text-center service-card">
+          <div class="card-body">
+            <span class="display-5 text-warning mb-3 d-block"><i class="bi bi-patch-check"></i></span>
+            <h5 class="card-title">Quality Analysis & Support</h5>
+            <p class="card-text">Comprehensive QA, health checks, and support for mission-critical database systems.</p>
+            <a href="services.html#qa" class="stretched-link text-decoration-none text-warning fw-semibold">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About/Why Choose Us Section with Animated Counters -->
+  <section class="container my-5" id="about">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Database Team" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h3 class="fw-bold mb-3">Why Choose Amarrthatech?</h3>
+        <ul class="list-unstyled fs-5 mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> 10+ years of enterprise database expertise</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Proprietary AWR Analyzer for deep performance insights</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> 24/7 support and proactive monitoring</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> 100% client satisfaction and data security</li>
+        </ul>
+        <div class="row text-center mt-4">
+          <div class="col-4">
+            <div class="display-5 fw-bold text-primary counter" data-count="50">0</div>
+            <div class="small">Enterprise Clients</div>
+          </div>
+          <div class="col-4">
+            <div class="display-5 fw-bold text-success counter" data-count="99">0</div>
+            <div class="small">% Uptime</div>
+          </div>
+          <div class="col-4">
+            <div class="display-5 fw-bold text-warning counter" data-count="100">0</div>
+            <div class="small">% Satisfaction</div>
+          </div>
+        </div>
+        <p class="mt-4 text-muted">We deliver scalable, secure, and high-performance database solutions for enterprises across industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel with Animations -->
+  <section class="bg-light py-5" id="testimonials">
+    <div class="container">
+      <h2 class="text-center mb-4 animate__animated animate__fadeInUp" data-aos="fade-up">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-aos="fade-right">
+            <blockquote class="blockquote mx-auto" style="max-width:600px;">
+              “Amarrthatech's team migrated our databases to the cloud with zero downtime. Their expertise is unmatched!”
+              <footer class="blockquote-footer mt-2" style="color:#fff;">Rahul S., CTO, FinEdge Solutions</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item" data-aos="fade-left">
+            <blockquote class="blockquote mx-auto" style="max-width:600px;">
+              “Their AWR Analyzer tool helped us resolve performance bottlenecks in days, not weeks. Highly recommended.”
+              <footer class="blockquote-footer mt-2" style="color:#fff;">Priya M., Head of IT, RetailMart</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item" data-aos="fade-up">
+            <blockquote class="blockquote mx-auto" style="max-width:600px;">
+              “We trust Amarrthatech for all our mission-critical database needs. Outstanding support and results.”
+              <footer class="blockquote-footer mt-2" style="color:#fff;">Sandeep K., CIO, HealthFirst</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Client Logos Carousel -->
+      <div class="row mt-5 justify-content-center" data-aos="fade-up">
+        <div class="col-auto">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Client 1 logo" width="60" class="mx-2 opacity-75" loading="lazy">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968706.png" alt="Client 2 logo" width="60" class="mx-2 opacity-75" loading="lazy">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968707.png" alt="Client 3 logo" width="60" class="mx-2 opacity-75" loading="lazy">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968708.png" alt="Client 4 logo" width="60" class="mx-2 opacity-75" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action Section -->
+  <section class="py-5 bg-gradient" style="background: linear-gradient(120deg, #005fa3 60%, #002855 100%);">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4 flex-column flex-md-row" style="min-height: 160px;">
+        <div class="col-md-1 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+          <span class="d-inline-flex align-items-center justify-content-center" style="background:linear-gradient(135deg,#ffc107 60%,#fffbe6 100%);border-radius:1.5em;width:64px;height:64px;box-shadow:0 2px 16px rgba(255,193,7,0.18);">
+            <i class="bi bi-lightning-charge-fill" style="font-size:2rem;color:#002855;"></i>
+          </span>
+        </div>
+        <div class="col-md-7 text-md-start text-center">
+          <h2 class="fw-bold mb-2 animate__animated animate__pulse" data-aos="zoom-in" style="color:#fff; font-size:2rem; letter-spacing:0.5px; text-shadow:0 4px 32px rgba(0,0,0,0.22),0 1.5px 0 #ffc107;">
+            Ready to Transform Your Database Infrastructure?
+          </h2>
+          <div class="lead mb-0 animate__animated animate__fadeInUp" data-aos="fade-up" style="color:#fff; font-size:1.18rem; font-weight:500;">
+            <span style="font-weight:700; color:#ffc107;">Contact Amarrthatech</span> for a <span style="color:#ffc107; font-weight:700;">free consultation</span> and discover how we can <span style="color:#ffc107; font-weight:700;">optimize</span>, <span style="color:#198754; font-weight:700;">secure</span>, and <span style="color:#ffc107; font-weight:700;">future-proof</span> your data systems.
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-md-end justify-content-center align-items-center gap-3 mt-4 mt-md-0">
+          <a href="contact.html" class="btn btn-warning btn-lg px-5 shadow" data-aos="zoom-in" data-aos-delay="200">Get Started</a>
+          <a href="tel:+919876543210" class="btn btn-outline-light btn-lg px-4" data-aos="zoom-in" data-aos-delay="300">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-4 mt-5 animate__animated animate__fadeInUp" data-aos="fade-up">
+    <div class="row justify-content-center mb-3 py-3 px-2 px-md-4 mx-auto" style="max-width:1100px; background: rgba(255,255,255,0.13); border-radius: 2em; box-shadow: 0 4px 32px rgba(0,40,85,0.13); backdrop-filter: blur(8px);">
+      <div class="col-md-4 mb-2 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <a href="mailto:enquiry@amarrthatech.com" class="text-warning text-decoration-none mb-2">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i> enquiry@amarrthatech.com
+        </a>
+        <a href="mailto:careers@amarrthatech.com" class="text-warning text-decoration-none mb-2">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i> careers@amarrthatech.com
+        </a>
+        <a href="tel:+917718835372" class="text-white text-decoration-none mb-2">
+          <i class="bi bi-telephone-fill" aria-hidden="true"></i> +91 7718835372
+        </a>
+        <div class="text-white-50 small">502, 5th Floor, Sai Krupa CHS Ltd,<br>Building No. 58, Kurla,<br>Mumbai – 400024, Maharashtra, India</div>
+      </div>
+      <div class="col-md-4 mb-2 mb-md-0 d-flex flex-column align-items-center">
+        <div class="mb-2">
+          <a href="https://www.linkedin.com/" class="text-white me-3" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/" class="text-white me-3" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        </div>
+        <div class="text-white-50 small">Mon - Fri 9:30am - 6:30pm</div>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+        <form class="d-flex justify-content-center align-items-center w-100" autocomplete="off">
+          <input type="email" class="form-control form-control-sm w-auto me-2" placeholder="Subscribe newsletter" aria-label="Subscribe to newsletter" required style="background:rgba(255,255,255,0.7);border-radius:2em;">
+          <button class="btn btn-warning btn-sm" type="submit">Subscribe</button>
+        </form>
+        <div class="text-white-50 small mt-2">© 2025 Amarrthatech Pvt. Ltd. | CIN: U62099PN2025PTC238967</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Animate.css for entrance animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- AOS (Animate On Scroll) Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // Animated counters
+    document.addEventListener('DOMContentLoaded', function() {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-count');
+          const count = +counter.innerText;
+          const inc = Math.ceil(target / 60);
+          if(count < target) {
+            counter.innerText = count + inc;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    });
+    // Optional: Typewriter effect for hero title
+    window.addEventListener('DOMContentLoaded', function() {
+      const el = document.getElementById('typed-title');
+      if(el) {
+        const text = el.textContent;
+        el.textContent = '';
+        let i = 0;
+        function type() {
+          if(i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 30);
+          }
+        }
+        type();
+      }
+    });
+    // Smooth transition for all internal .html links
+    document.addEventListener('DOMContentLoaded', function() {
+      var internalLinks = document.querySelectorAll('a[href$=".html"], a[href$=".html#"], a[href^="about.html"], a[href^="contact.html"], a[href^="services.html"]');
+      internalLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const href = link.getAttribute('href');
+          if (href && href !== window.location.pathname.split('/').pop()) {
+            e.preventDefault();
+            document.body.style.transition = 'opacity 0.5s';
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+              window.location = href;
+            }, 500);
+          }
+        });
+      });
+    });
+
+    // Smooth fade-in on page load
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s';
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        document.body.style.opacity = '1';
+      }, 10);
+    });
+  </script>
+</body>
+</html>

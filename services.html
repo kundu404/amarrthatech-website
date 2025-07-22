@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Amarrthatech</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <script>
+    // Smooth transition for all internal .html links
+    document.addEventListener('DOMContentLoaded', function() {
+      var internalLinks = document.querySelectorAll('a[href$=".html"], a[href$=".html#"], a[href^="about.html"], a[href^="contact.html"], a[href^="services.html"]');
+      internalLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const href = link.getAttribute('href');
+          if (href && href !== window.location.pathname.split('/').pop()) {
+            e.preventDefault();
+            document.body.style.transition = 'opacity 0.2s';
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+              window.location = href;
+            }, 200);
+          }
+        });
+      });
+    });
+    // Smooth fade-in on page load
+document.body.style.opacity = '0';
+document.body.style.transition = 'opacity 0.2s';
+window.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    document.body.style.opacity = '1';
+        // Scroll to anchor if present in URL
+        var hash = window.location.hash;
+        if(hash) {
+          var el = document.querySelector(hash);
+          if(el) {
+            setTimeout(function() {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+          }
+        }
+      }, 10);
+    });
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm animate__animated animate__fadeInDown" style="z-index: 1000;">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">
+        <img src="logo.png" alt="Amarrthatech Logo" style="max-height:90px; width:auto; vertical-align:middle; box-shadow:0 4px 16px rgba(0,0,0,0.18);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html#managed">Database Managed Services</a></li>
+              <li><a class="dropdown-item" href="services.html#performance">Performance Tuning</a></li>
+              <li><a class="dropdown-item" href="services.html#migration">Cloud & Migration</a></li>
+              <li><a class="dropdown-item" href="services.html#security">Security & Auditing</a></li>
+              <li><a class="dropdown-item" href="services.html#analytics">Dashboards & Analytics</a></li>
+              <li><a class="dropdown-item" href="services.html#middleware">App & Middleware</a></li>
+              <li><a class="dropdown-item" href="services.html#architecture">Enterprise Architecture</a></li>
+              <li><a class="dropdown-item" href="services.html#qa">Quality Analysis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-warning fw-semibold px-4 shadow-sm" href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services Hero Banner -->
+  <section class="hero-section text-white d-flex align-items-center position-relative" style="background: linear-gradient(120deg, #002855 60%, #005fa3 100%); min-height: 40vh;">
+    <div class="container text-center py-4 position-relative" style="z-index:2;">
+      <h1 class="display-4 fw-bold mb-2 animate__animated animate__fadeInDown">Our Services</h1>
+      <p class="lead mb-0 animate__animated animate__fadeInUp">Comprehensive Database Solutions for Modern Enterprises</p>
+    </div>
+    <svg viewBox="0 0 1440 320" style="position:absolute;bottom:0;left:0;width:100%;z-index:1;opacity:0.7;"><path fill="#fff" fill-opacity="0.1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,122.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+
+  <!-- Detailed Services Section with Glassmorphism Cards -->
+  <section class="container py-5">
+    <div class="row g-4 justify-content-center">
+      <!-- Service Card Template -->
+      <div class="col-lg-5 col-md-6 mb-5" id="managed">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#005fa3 60%,#002855 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(0,40,85,0.18);">
+                <i class="bi bi-database-fill-gear text-warning" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-primary mb-0">Database Managed Services</h3>
+            </div>
+            <p class="card-text">End-to-end management for Oracle, MySQL, PostgreSQL, and MongoDB. 24/7 monitoring, automated backups, disaster recovery, and proactive support. Focus on your business while we handle the health, performance, and security of your databases.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> 24/7 monitoring & support</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Automated backup & recovery</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Upgrades, patching, optimization</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Security hardening</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="performance">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.1s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#198754 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(25,135,84,0.18);">
+                <i class="bi bi-bar-chart-line text-light" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-success mb-0">Performance Tuning & AWR Analysis</h3>
+            </div>
+            <p class="card-text">Expert AWR report analysis, query optimization, and schema tuning for maximum database efficiency. Reduce downtime and improve user experience with advanced tools and methodologies.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> AWR report analysis</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Query & index optimization</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Resource utilization review</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom performance dashboards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="migration">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.2s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#ffc107 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(255,193,7,0.18);">
+                <i class="bi bi-cloud-arrow-up text-dark" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-warning mb-0">Cloud & On-Premise Migration</h3>
+            </div>
+            <p class="card-text">Seamless migration of databases to cloud or on-premise environments, ensuring zero data loss and minimal downtime. Tailored strategies, proven methodologies, and automation tools.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Cloud migration (AWS, Azure, GCP)</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Data integrity & validation</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Downtime minimization</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Post-migration support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="security">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.3s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#0dcaf0 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(13,202,240,0.18);">
+                <i class="bi bi-shield-lock text-dark" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-info mb-0">Database Security & Auditing</h3>
+            </div>
+            <p class="card-text">Comprehensive audits, compliance checks, and proactive threat monitoring. Safeguard sensitive data, meet regulatory requirements, and prevent unauthorized access.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Security audits & compliance</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Vulnerability assessment</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Access control & encryption</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Real-time threat monitoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="analytics">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.4s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#6c757d 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(108,117,125,0.18);">
+                <i class="bi bi-graph-up-arrow text-light" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-secondary mb-0">Custom Dashboards & Analytics</h3>
+            </div>
+            <p class="card-text">Real-time dashboards and analytics for database health, KPIs, and business insights. Visualize data, track performance, and make informed decisions.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom dashboard development</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Real-time monitoring</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Business intelligence integration</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Reporting & visualization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="middleware">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#dc3545 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(220,53,69,0.18);">
+                <i class="bi bi-people text-light" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-danger mb-0">Application & Middleware Support</h3>
+            </div>
+            <p class="card-text">Support for enterprise applications, middleware, and structured network services. Seamless integration, troubleshooting, and performance optimization for business-critical systems.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Application integration</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Middleware configuration</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Performance troubleshooting</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Network services support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="architecture">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.6s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#198754 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(25,135,84,0.18);">
+                <i class="bi bi-diagram-3 text-light" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-success mb-0">Enterprise Architecture</h3>
+            </div>
+            <p class="card-text">Scalable, secure, and robust enterprise database architectures tailored to your growth, compliance, and operational needs.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Architecture design & planning</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Scalability & reliability</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Security & compliance</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Disaster recovery planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-5" id="qa">
+        <div class="card h-100 border-0 shadow-lg service-glass animate__animated animate__fadeInUp" style="animation-delay:0.7s;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="service-icon d-inline-flex align-items-center justify-content-center me-3" style="background:linear-gradient(135deg,#ffc107 60%,#005fa3 100%);border-radius:1.5em;width:56px;height:56px;box-shadow:0 2px 16px rgba(255,193,7,0.18);">
+                <i class="bi bi-patch-check text-dark" style="font-size:2rem;"></i>
+              </span>
+              <h3 class="card-title text-warning mb-0">Quality Analysis & Support</h3>
+            </div>
+            <p class="card-text">Comprehensive QA, health checks, and support for mission-critical database systems. Reliable, secure, and optimal performance for your databases.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Quality assurance testing</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Health checks & diagnostics</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Performance benchmarking</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i> Support & maintenance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .service-glass {
+      background: rgba(255,255,255,0.13);
+      border-radius: 2em;
+      box-shadow: 0 4px 32px rgba(0,40,85,0.13);
+      backdrop-filter: blur(8px);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-glass:hover {
+      box-shadow: 0 8px 48px rgba(0,40,85,0.22);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .service-icon {
+      min-width:56px;
+      min-height:56px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .card-title {
+      font-size:1.35rem;
+      font-weight:700;
+      letter-spacing:0.5px;
+    }
+    .card-text {
+      font-size:1.08rem;
+      color:#222;
+    }
+    @media (max-width: 991px) {
+      .col-lg-5 { flex: 0 0 100%; max-width: 100%; }
+    }
+  </style>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4 mt-5 animate__animated animate__fadeInUp" data-aos="fade-up">
+    <div class="row justify-content-center mb-3 py-3 px-2 px-md-4 mx-auto" style="max-width:1100px; background: rgba(255,255,255,0.13); border-radius: 2em; box-shadow: 0 4px 32px rgba(0,40,85,0.13); backdrop-filter: blur(8px);">
+      <div class="col-md-4 mb-2 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <a href="mailto:enquiry@amarrthatech.com" class="text-warning text-decoration-none mb-2">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i> enquiry@amarrthatech.com
+        </a>
+        <a href="mailto:careers@amarrthatech.com" class="text-warning text-decoration-none mb-2">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i> careers@amarrthatech.com
+        </a>
+        <a href="tel:+917718835372" class="text-white text-decoration-none mb-2">
+          <i class="bi bi-telephone-fill" aria-hidden="true"></i> +91 7718835372
+        </a>
+        <div class="text-white-50 small">502, 5th Floor, Sai Krupa CHS Ltd,<br>Building No. 58, Kurla,<br>Mumbai – 400024, Maharashtra, India</div>
+      </div>
+      <div class="col-md-4 mb-2 mb-md-0 d-flex flex-column align-items-center">
+        <div class="mb-2">
+          <a href="https://www.linkedin.com/" class="text-white me-3" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/" class="text-white me-3" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        </div>
+        <div class="text-white-50 small">Mon - Fri 9:30am - 6:30pm</div>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+        <form class="d-flex justify-content-center align-items-center w-100" autocomplete="off">
+          <input type="email" class="form-control form-control-sm w-auto me-2" placeholder="Subscribe newsletter" aria-label="Subscribe to newsletter" required style="background:rgba(255,255,255,0.7);border-radius:2em;">
+          <button class="btn btn-warning btn-sm" type="submit">Subscribe</button>
+        </form>
+        <div class="text-white-50 small mt-2">© 2025 Amarrthatech Pvt. Ltd. | CIN: U62099PN2025PTC238967</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
