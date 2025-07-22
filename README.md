@@ -28,8 +28,4 @@ A responsive multi-page company website built using HTML, CSS, Bootstrap, and PH
 - ✅ Server-side email validation
 - ✅ Success/error message alerts
 
-## 🚀 Deployment
 
-1. **Local Testing**:
-   ```bash
-   git clone https://github.com/kundu404/amarrthatech-website.git
